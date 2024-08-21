@@ -1,0 +1,14 @@
+setclipboard(https://discord.gg/cV3WC2w4Sd)
+
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+local button = Instance.new("TextButton", screenGui)
+
+screenGui.IgnoreGuiInset = true
+screenGui.ResetOnSpawn = false
+
+button.Size = UDim2.new(0, 200, 0, 50)
+button.Position = UDim2.new(0.5, -100, 0.5, -25)
+button.Text = "Click Me!"
+
+button.MouseButton1Click:Connect(function() player:Kick("nigga thought 😭") end)
